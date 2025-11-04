@@ -1,7 +1,7 @@
 // config/server-mode.node.js (Node.js后端专用)
 const USE_MOCK_SERVER = false; // 改为 false 使用真实服务器
 const LOCAL_SERVER_URL = 'http://localhost:8080';
-const REAL_SERVER_URL = 'http://192.168.31.249:8080'; // 中间层服务器地址（直接连接，不使用 nginx）
+const REAL_SERVER_URL = 'http://192.168.31.249:8080'; // 中间层服务器地址
 const REAL_SERVER_PORT = 8080; // 中间层服务器端口
 const REAL_WECHAT_CONFIG = {
     appid: 'wx94289b0d2ca7a802',
@@ -27,7 +27,7 @@ const getCurrentServerConfig = () => {
             }
         };
     } else {
-        // 使用真实服务器，直接连接中间层（不使用 nginx）
+        // 使用真实服务器，直接连接中间层
         return {
             mode: 'real',
             url: REAL_SERVER_URL,

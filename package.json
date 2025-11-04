@@ -1,7 +1,7 @@
 {
   "name": "live-debate-gateway",
   "version": "2.0.0",
-  "description": "直播辩论系统 - 中间层网关服务",
+  "description": "直播辩论 - 中间层网关服务",
   "main": "gateway.js",
   "scripts": {
     "start": "node gateway.js",
